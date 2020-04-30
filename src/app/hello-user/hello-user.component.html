@@ -1,0 +1,19 @@
+<div>
+  <H1> Welcome! </H1>
+</div>
+<br>
+
+<div class="container color-light">
+  <div class="col">
+    <br>
+    <p class="sm">Use this form to say hello</p>
+    <br>
+    <form>
+     <input type="text" class="txt" name="firstName" placeholder="First Name" [(ngModel)]="firstName">
+      <br>
+     <input type="text" class="txt" name="lastName" placeholder="Last Name" [(ngModel)]="lastName">
+      <input type="submit" class="btn" name="sayHelloBtn" [value]="btnText" (click)="addName()">
+      <br><span>{{ fullName }}</span>
+     </form>
+  </div>
+</div>
